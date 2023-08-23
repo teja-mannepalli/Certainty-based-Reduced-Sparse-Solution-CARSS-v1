@@ -1,4 +1,6 @@
 # Certainty-based-Reduced-Sparse-Solution-CARSS
+
+
 % The problem to be solved is phi = K J. J is the unknown vector.
 % 
 % The main function is "CARSS.m". 
@@ -70,12 +72,15 @@
 % Systems 
 % and Rehabilitation Engineering 27.2 (2018): 172-178.
 % 
-% The links for the above is 
+% The links for the above are 
 % https://www.ncbi.nlm.nih.gov/pubmed/30596580           and       
 % https://arxiv.org/abs/1812.09506
-% Also, please cite if you had used this code in your research.
+% Also, please cite if you have used this code in your research.
+% 
 % 
 % If any files are missing or any mistakes, please feel free to inform me at  
-% mteja134@gmail.com. The authors are willing to take valid mistakes existing to correct.
-% 
+% mteja134@gmail.com. 
+**
+The authors are willing to consider valid mistakes to correct.  
+**Please don't start nit-picking and thereby judge me for the code or anything**.
 % Thank you.
