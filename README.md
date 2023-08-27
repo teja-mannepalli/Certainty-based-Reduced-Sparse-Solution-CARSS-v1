@@ -82,5 +82,4 @@
 % mteja134@gmail.com. 
 **
 The authors are willing to consider valid mistakes to correct.  
-**Please don't start nit-picking and thereby judge me for the code or anything**.
 % Thank you.
