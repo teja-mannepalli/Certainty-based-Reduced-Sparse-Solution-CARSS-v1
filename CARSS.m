@@ -21,7 +21,7 @@ function [J_CARSS,peaks,pos_sources_all,J]...
 %  
 %  
 %  ch is the channel location cutoff such that each channel is surrounded by one  
-% level of its surrounding.
+% level of its surroundings.
 %  p- 0   exponential based similarity estimation
 %     1   L1  norm      "      "	"	"	
 %     2   L2  norm      "      "	"	"	
@@ -33,7 +33,7 @@ function [J_CARSS,peaks,pos_sources_all,J]...
 % % 
 %  
 %  locs - has neighboring channels for each channel 
-%  peak_sch_max, peak_sch_min - are M X 1 matrices contains channel where
+%  peak_sch_max, peak_sch_min - are M X 1 matrices containing channels where
 %                              global maxima are formed. non-zero of peak_sch_max
 %                              for a source implies the global optimum is the global  
 % minima.
@@ -59,9 +59,9 @@ function [J_CARSS,peaks,pos_sources_all,J]...
 % pos_sources,pos_sourcesm - certain sources that may be active. One is by
 %                          considering maxima and another by minima in phi.
 % pos_sources_all - Similarly, as above combined.
-% J_CARSS - The CARSS estimate having the certainty of each source.
+% J_CARSS - The CARSS estimate has the certainty of each source.
 % Kr, J_carss - Reduced K and J_CARSS to only non-zeros for stage-II.
-% IndDsr, diposr - The above-reduced sources locations for stage-II.
+% IndDsr, diposr - The above-reduced sources locations for stage II.
 % J_mne - The solution using the reduced variables above. As an example,
 %         minimum norm estimate (Hamalainen et al.,1993) is used in stage-II.
 % 
@@ -71,13 +71,13 @@ function [J_CARSS,peaks,pos_sources_all,J]...
 % Systems 
 % and Rehabilitation Engineering 27.2 (2018): 172-178.
 % 
-% The links for the above is 
+% The links for the above are 
 % https://www.ncbi.nlm.nih.gov/pubmed/30596580           and       
 % https://arxiv.org/abs/1812.09506
-% Also, please cite if you had used this code in your research.
+% Also, please cite if you have used this code in your research.
 % 
-% If any files are missing or any mistakes, please feel free to inform me at  
-% mteja134@gmail.com. The authors are willing to take valid mistakes existing to correct.
+% If any files are missing or any mistakes, please inform me at  
+% mteja134@gmail.com. The authors are willing to make valid mistakes existing to correct.
 % 
 % Thank you.
 
