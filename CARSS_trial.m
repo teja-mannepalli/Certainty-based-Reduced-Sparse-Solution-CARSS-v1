@@ -17,7 +17,7 @@ fprintf('\n');
 %%
 close all;
 clc
-aa = [45];  % Ideally 1161 sources so source will be of index floor(aa/3)
+aa = [45];  
 % 1345, 345, 45
 gd = 20;
 
@@ -32,13 +32,3 @@ fprintf('\n');
 [J_CARSS,peaks,pos_sources_all,J_sLOR]...
     = CARSS(K,phi,gd,locs,peak_indxs_max,peak_indxs_min,Ds);
 
-phians = K*J_sLOR;
-% % % plot_elec(phi,elec);
-% % fprintf('Error = %f',100*abs(round(sum(phi - phians)/sum(phi),3)));  %
-% scale error!!!
-% fprintf('\n');
-disp(J_CARSS(aa,1));
-
-% load vol
-% figure;plot_source(J321(J_problem),vol,grid,[0.5,0.5,0],.1);
-% figure;plot_source(J321(J_sLOR),vol,grid,[0.5,0.5,0],.1);
