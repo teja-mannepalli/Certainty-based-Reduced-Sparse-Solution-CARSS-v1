@@ -39,6 +39,6 @@ phians = K*J_sLOR;
 % fprintf('\n');
 disp(J_CARSS(aa,1));
 
-load vol
-figure;plot_source(J321(J_problem),vol,grid,[0.5,0.5,0],.1);
-figure;plot_source(J321(J_sLOR),vol,grid,[0.5,0.5,0],.1);
+% load vol
+% figure;plot_source(J321(J_problem),vol,grid,[0.5,0.5,0],.1);
+% figure;plot_source(J321(J_sLOR),vol,grid,[0.5,0.5,0],.1);
