@@ -2,10 +2,8 @@ clc
 close all;
 clear;
 
-% load('K_carss_IITKGP');
 load('grid.mat');
 load('K.mat');
-
 load('elec.mat');
 
 %%
