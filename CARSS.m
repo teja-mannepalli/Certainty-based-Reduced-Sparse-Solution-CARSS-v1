@@ -1,5 +1,6 @@
 function [J_CARSS,peaks,pos_sources_all,J]...
         = CARSS(varargin)
+
 % The problem to be solved is phi = K J. J is the unknown vector.
 % 
 % The main function is "CARSS.m". 
@@ -61,9 +62,9 @@ function [J_CARSS,peaks,pos_sources_all,J]...
 % pos_sources_all - Similarly, as above combined.
 % J_CARSS - The CARSS estimate has the certainty of each source.
 % Kr, J_carss - Reduced K and J_CARSS to only non-zeros for stage-II.
+% Comment Stage-II If you want to skip
 % IndDsr, diposr - The above-reduced sources locations for stage II.
-% J_mne - The solution using the reduced variables above. As an example,
-%         minimum norm estimate (Hamalainen et al.,1993) is used in stage-II.
+% J - The solution after Stage II. 
 % 
 % % % % % % For any details, please refer
 % Mannepalli, Teja, and Aurobinda Routray. "Certainty-Based Reduced Sparse 
@@ -110,7 +111,8 @@ end
 pos_sources_all = accumarray([pos_sources_i(:),pos_sources_j(:);pos_sourcesm_i(:),pos_sourcesm_j(:)],[pos_sources(:);pos_sourcesm(:)]);
 %% STAGE-II  
 % % % % % sLORETA is used just for reference. Change it if you want % % % % 
-fprintf('Stage-II');
+fprintf('Stage-II');fprintf('\n');
+fprintf('sLORETA is used just for reference. Change it if you want');
 fprintf('\n');
 Kr = K;aa = 1;
 for i = 1:size(K,2)
