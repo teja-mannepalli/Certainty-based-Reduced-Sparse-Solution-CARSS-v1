@@ -112,7 +112,8 @@ pos_sources_all = accumarray([pos_sources_i(:),pos_sources_j(:);pos_sourcesm_i(:
 %% STAGE-II  
 % % % % % sLORETA is used just for reference. Change it if you want % % % % 
 fprintf('Stage-II');fprintf('\n');
-fprintf('sLORETA is used just for reference. Change it if you want');
+% fprintf('sLORETA is used just for reference. Change it if you want');
+% fprintf('');
 fprintf('\n');
 Kr = K;aa = 1;
 for i = 1:size(K,2)
@@ -121,6 +122,7 @@ for i = 1:size(K,2)
         aa = aa + 1;
     end
 end
-[J] = sLORETA_inv(Kr,phi,[]);
+J = J_CARSS;
+% [J] = sLORETA_inv(Kr,phi,[]);
 
 end
