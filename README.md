@@ -63,8 +63,6 @@
 % J_CARSS - The CARSS estimate having the certainty of each source.
 % Kr, J_carss - Reduced K and J_CARSS to only non-zeros for stage-II.
 % IndDsr, diposr - The above-reduced sources locations for stage-II.
-% J_mne - The solution using the reduced variables above. As an example,
-%         minimum norm estimate (Hamalainen et al.,1993) is used in stage-II.
 % 
 % % % % % % For any details, please refer
 % Mannepalli, Teja, and Aurobinda Routray. "Certainty-Based Reduced Sparse 
@@ -83,11 +81,3 @@
 **
 The authors are willing to consider valid mistakes to correct.  
 % Thank you.
-
-
-
-
-
-
-
-% The code uses 'L-curve' method to estimate regularization parameter by P. C. Hansen
