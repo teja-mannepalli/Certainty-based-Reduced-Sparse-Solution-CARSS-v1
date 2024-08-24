@@ -28,8 +28,8 @@ function [J_CARSS,peaks,pos_sources_all,J]...
 %     2   L2  norm      "      "	"	"	
 % 
 %  gd is the source- source one level inter-grid point distance in mm.
-%  r is the radius of the head or outer sphere to calculate the geodesic distance in mm.
-%  stage2- whether to proceed to stage-II or not.
+% 
+%  
 % % % % % % % % % % % % % % % % OUTPUT VARIABLES % % % % % % % % % % % % % % % % % %  
 % % 
 %  
