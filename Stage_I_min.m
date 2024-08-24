@@ -10,7 +10,6 @@ else
     pos_sourcesm = [0];
 end 
 
-% [Ct] = cert_at_peaksm_compt(locs,peak_min_phi,K,phi,pos_sourcesm);
 [Ct] = certainty(locs,peak_min_phi,K,phi,pos_sourcesm);
 tce = 0;tf = 30;m = 1;
 [Dss,IndDs] = sort(Ds,1,'ascend');
@@ -53,8 +52,7 @@ end
 J = zeros(size(K,2),1);
 if exist('sec','var')
 if sum(sum(Desm(peak_min_phi,:)))>0
-%     J(sec(sec~=0)) = (certain(certain~=0));
-%     J(pos_sourcesm(pos_sourcesm~=0)) = (Ct(Ct~=0));
+
     for i=1:size(sec,1)  
         for j=1:size(sec,2)
             if sec(i,j)~=0
